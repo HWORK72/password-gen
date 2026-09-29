@@ -1,3 +1,20 @@
-# password-gen
-тоже тренировочный пет проект, больше в readme
-Во время обучения пайтону мне пришла мысль создать что то полезное. Так родился мой собственный генератор паролей, он генерирует рандомный набор букв, символов и пробелов, создавая тяжелые (невозможные) для бутфорса пароли. Изначально это был мелкий проект для меня самого на уровне консольки которую я запускал у себя на пк, но позже я решил тоже выдвинуть этот код на уровень сайта. С результатом можно ознакомиться по ссылке http://heisen.pythonanywhere.com/ (если не зайдет - попробуйте с впн)
+🇷🇺 [Читать на русском](README_RU.md)
+
+A lightweight web microservice designed for generating cryptographically secure, high-entropy passwords resilient to distributed brute-force and dictionary attacks.
+
+### Key Architectural Highlights:
+* **CSPRNG-Backed Randomness:** Leverages the native `secrets` module providing hardware-backed cryptographic randomness immune to algorithmic predictability.
+* **Custom Entropy Modeling:** Configurable character spaces supporting uppercase, lowercase, numeric, symbolic, and whitespace tokens with enforced entropy thresholds.
+* **Clean Web Runtime:** Streamlined Flask routing serving instantaneous generation pipelines to client frontends.
+* **Cloud-Ready Configuration:** Pre-configured deployment architecture optimized for hosted PythonAnywhere environments.
+
+### Tech Stack:
+* Python 3.12
+* Flask (Microframework runtime)
+* Secrets / Cryptographic primitives
+* HTML5 / CSS3 (Frontend presentation)
+
+### Quick Start:
+```bash
+pip install -r requirements.txt
+python flask_app(8).py
